@@ -1,0 +1,19 @@
+Normalmente BT divide la pantalla en 12 secciones de igual tamaño.
+
+La clase container hace una divicion central grande y 2 pequeñas a los lados, de tal forma para CENTRAR todo el contenido.
+
+Existen CUATRO tamaños en BT:
+    sm: Small
+    md: Medium
+    lg: Large
+    xl: Extra Large
+
+Los div con clase ROW se encargarán de dividir cada elemento en filas.
+
+Es posible aplicar facilmente diferentes tamaños para cada una de las columnas, por ejemplo:
+    <div class="col-sm-12 col-md-4 col-lg-2 col-xl-1"> ...
+Esto significa que en tamaños small va a ocupar 12 espacios de toda la sección, en tamaños medianos 4, en tamaños largos 2 y en tamaños extra largos 1.
+
+COMPONENTES EN BT
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
