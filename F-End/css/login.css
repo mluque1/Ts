@@ -3,20 +3,37 @@ body {
     background: rgb(224, 224, 224);
 }
 
-.submit{
-
+.navegador{
+    background: rgb(224, 224, 224);
 }
 
 .contenedor{
-    background-color: red;
     border-radius: 25px;
 }
 
-header {
+.logo{
+    background: rgba(255, 255, 255, 0.205);
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-item{
+    border-color: black;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+
+    margin: 0 5px 0 5px;
+    padding: 2px 10px 2px 10px;
+    text-decoration: none;
+    color: initial;
+}
+
+.divisor {
     background: linear-gradient(to right,  #FF0040, #B23EFF);
     display: flex; 
     justify-content:end;
-    height: 50px;
+    height: 25px;
 }
 
 header a.button {
