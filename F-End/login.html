@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Toht - UPB</title>
-        <link rel="Stylesheet" href="css/login.css">
+        <!--Boostrap CSS-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--Custom CSS-->
+        <link rel="Stylesheet" href="css/login.css">
     </head>
     <body>
         <header>
@@ -25,26 +27,33 @@
             
         </nav>
         
-        <section>
-            <form class="form">
-                <label></label>
-                <div class="input">
-                    <label>Correo: </label>
-                    <input type="text">
+        <div class="container col-sm-12 col-md-5 col-lg-5 col-xl-5 bg-white py-4 px-4 contenedor my-3">
+            <form class="my-2">
+                <div class="mb-4">
+                  <label for="correo" class="form-label">Correo Institucional: </label>
+                  <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="nombre.apellido@upb.edu.co">
                 </div>
-
-                <div class="input">
-                    <label>Contraseña: </label>
-                    <input type="password">
+                <div class="mb-4">
+                  <label for="password" class="form-label">Contraseña: </label>
+                  <input type="password" class="form-control" id="password" placeholder="**********">
                 </div>
-                <a href="https://google.com" class="button">Ingresar</a>
-                <a href="https://google.com">¿Olvidó su contraseña?</a>
-            </form>
-        </section>
+                <div class="mb-4 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Mantener la sección iniciada</label>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Iniciar Sección</button>
+                    <button class="btn btn-secondary" type="button">Recuperar contraseña</button>
+                  </div>
+              </form>
+        </div>
 
         <footer>
             
         </footer>
     </body>
+    <!--Boostrap JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS-->
     <script src="login/login.js"></script>
 </html>

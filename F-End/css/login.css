@@ -1,5 +1,15 @@
 body {
     margin: 0;
+    background: rgb(224, 224, 224);
+}
+
+.submit{
+
+}
+
+.contenedor{
+    background-color: red;
+    border-radius: 25px;
 }
 
 header {
