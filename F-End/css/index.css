@@ -1,11 +1,11 @@
-.contenedor {
-  display: flex;
-  flex-direction: column;
-}
-
+.display-5,
 .display-6 {
   border-color: #c0c0c0;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
 }
 
+.archivo {
+  margin: 0;
+  padding: 0;
+}

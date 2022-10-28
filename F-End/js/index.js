@@ -3,7 +3,7 @@ tit.onclick = function () {
   titulo();
 };
 
-var aut = document.getElementById("autores");
+var aut = document.getElementById("autor");
 aut.onclick = function () {
   autores();
 };
