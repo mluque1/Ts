@@ -11,13 +11,13 @@ body {
 .nav-link{
     border-color: white;
     border-style: solid;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 2px 0px;
 }
 
 .nav-link:hover{
     border-color: red;
     border-style: solid;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 2px 0px;
 
     font-weight: bold;
 }
@@ -25,7 +25,7 @@ body {
 .active{
     border-color: red;
     border-style: solid;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 2px 0px;
 
     font-weight: bold;
 }
