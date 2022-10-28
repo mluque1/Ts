@@ -1,6 +1,15 @@
 body {
+    position:absolute;
+    width: 100%;
+    height: 100%;
     margin: 0;
     background: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url("https://www.upb.edu.co/es/imagenes/img-edificiossedefloridablanca-cam-1464097906257.jpg");
+    background-repeat: no-repeat;
 }
 
 .navbar-nav{
@@ -45,6 +54,11 @@ body {
     margin: 0px;
 }
 
+.thot{
+    height: 65px;
+    margin-left: 5px;
+}
+
 .divisor {
     background: linear-gradient(to right,  #FF0040, #B23EFF);
     display: flex; 
@@ -54,7 +68,7 @@ body {
 
 footer {
     background: linear-gradient(to right,  #FF0040, #B23EFF);
-    display: flex; 
-    justify-content:end;
+    bottom: 0;
     height: 50px;
+    width: 100%;
 }
