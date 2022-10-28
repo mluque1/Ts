@@ -71,13 +71,10 @@
       <form class="my-2">
         <div class="mb-4">
           <label for="correo" class="form-label">Correo Institucional: </label>
-          <input
-            type="email"
-            class="form-control"
-            id="correo"
-            aria-describedby="emailHelp"
-            placeholder="nombre.apellido@upb.edu.co"
-          />
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="nombre.apellido" aria-label="usuario" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@upb.edu.co</span>
+          </div>
         </div>
         <div class="mb-4">
           <label for="password" class="form-label">Contraseña: </label>
