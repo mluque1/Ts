@@ -9,3 +9,17 @@
   margin: 0;
   padding: 0;
 }
+
+.preview{
+  width: 200px;
+}
+
+.info {
+  width: auto;
+}
+
+@media screen and (max-width: 991px) {
+  div.preview {
+    display: none;
+  }
+}

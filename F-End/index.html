@@ -64,9 +64,8 @@
 
       <div class="divisor"></div>
     </header>
-
     <div
-      class="container col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-white py-4 px-4 my-3 contenedor"
+      class="container col-12 bg-white py-4 px-4 my-3 contenedor"
     >
       <h1 class="display-5 py-2">Trabajos de alta calidad</h1>
       <p class="lead">Listar por:</p>
@@ -109,15 +108,40 @@
         <h3>Ultimos archivos subidos:</h3>
         <div class="card mt-4" style="max-width: 100%">
           <div class="row g-0">
-            <div class="col-md-2">
+            <div class="preview">
               <img
-                src="./fotos/foto-base.webp"
+                src="./fotos/placeholder.webp"
                 class="img-fluid rounded-start"
                 alt="..."
                 id="archivo-foto"
               />
             </div>
-            <div class="col-md-10">
+            <div class="info">
+              <div class="card-body">
+                <h5 class="card-title" id="archivo-titulo">Título</h5>
+                <p class="card-text text-muted" id="archivo-autor">Autores</p>
+                <p class="card-text" id="archivo-descripccion">Descripción</p>
+                <p class="card-text">
+                  <small class="text-muted" id="archivo-hora"
+                    >Agregado hace 3 horas.</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mt-4" style="max-width: 100%">
+          <div class="row g-0">
+            <div class="preview">
+              <img
+                src="./fotos/placeholder.webp"
+                class="img-fluid rounded-start"
+                alt="..."
+                id="archivo-foto"
+              />
+            </div>
+            <div class="info">
               <div class="card-body">
                 <h5 class="card-title" id="archivo-titulo">Título</h5>
                 <p class="card-text text-muted" id="archivo-autor">Autores</p>
@@ -132,23 +156,6 @@
           </div>
         </div>
       </div>
-      <!--
-      
-        <div class="row archivo">
-          <div
-            class="col-sm-0 col-md-2 col-lg-2 col-xl-2 px-0"
-          >
-            A
-          </div>
-          <div
-            class="col-sm-12 col-md-10 col-lg-10 col-xl-10 px-0"
-            style="background-color: blue; height: 20px"
-          >
-            B
-          </div>
-        </div>
-      </div>
-      -->
     </div>
 
     <footer></footer>
