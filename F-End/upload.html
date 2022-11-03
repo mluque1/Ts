@@ -58,13 +58,20 @@
               <a class="nav-link py-3" href="./index.html">Buscar</a>
               <a class="nav-link py-3" href="./aboutus.html">¿Acerca de?</a>
               <div class="dropdown dropstart py-2">
-                <button class="btn dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                  class="btn dropdown-toggle nav-link"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Docente
                 </button>
-                <ul class="dropdown-menu px-3" >
+                <ul class="dropdown-menu px-3">
                   <li><a class="nav-link" href="#">Crear profesor</a></li>
                   <li><a class="nav-link active">Subir Archivo</a></li>
-                  <li><a class="nav-link" href="./login.html">Cerrar Sesión</a></li>
+                  <li>
+                    <a class="nav-link" href="./login.html">Cerrar Sesión</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -76,10 +83,12 @@
     </header>
 
     <div class="container bg-white py-4 px-4 my-3">
-      <h2>Subir archivo:</h2>
+      <h2>Subir archivo</h2>
       <form>
         <div class="mb-4">
-          <label for="correo" class="form-label">Titulo del trabajo: </label>
+          <label for="correo" class="form-label"
+            ><b>Titulo del trabajo</b></label
+          >
           <div class="input-group">
             <input
               type="text"
@@ -91,7 +100,7 @@
           </div>
         </div>
         <div class="mb-4">
-          <label for="materia" class="form-label">Materia: </label>
+          <label for="materia" class="form-label"><b>Materia</b></label>
           <select class="form-select" aria-label="Default select example">
             <option selected>Seleccione una opción:</option>
             <option value="1">Calculo I.</option>
@@ -106,7 +115,7 @@
           </div>
         </div>
         <div class="mb-4">
-          <label for="descripcion" class="form-label">Descripción: </label>
+          <label for="descripcion" class="form-label"><b>Descripción</b></label>
           <div class="input-group">
             <textarea
               class="form-control descrp"
