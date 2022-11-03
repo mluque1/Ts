@@ -31,7 +31,7 @@
                 height="auto"
               />
             </a>
-            <a class="navbar-brand logo thot" href="#">
+            <a class="navbar-brand logo thot" href="./index.html">
               <img
                 class="Flogo thot"
                 src="fotos/thot.png"
@@ -57,7 +57,16 @@
             <div class="navbar-nav ms-auto px-3">
               <a class="nav-link py-3 active">Buscar</a>
               <a class="nav-link py-3" href="./aboutus.html">¿Acerca de?</a>
-              <a class="nav-link py-3" href="./login.html">Ingresar</a>
+              <div class="dropdown dropstart py-2">
+                <button class="btn dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Docente
+                </button>
+                <ul class="dropdown-menu px-3" >
+                  <li><a class="nav-link" href="#">Crear profesor</a></li>
+                  <li><a class="nav-link" href="./upload.html">Subir Archivo</a></li>
+                  <li><a class="nav-link" href="./login.html">Cerrar Sesión</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -65,6 +74,7 @@
 
       <div class="divisor"></div>
     </header>
+
     <div
       class="container col-12 bg-white py-4 px-4 my-3 contenedor"
     >

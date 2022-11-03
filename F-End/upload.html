@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thot - UPB</title>
-    <link rel="icon" type="image/x-icon" href="./fotos/thot.png">
+    <link rel="icon" type="image/x-icon" href="./fotos/thot.png" />
     <!--Boostrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--Custom CSS-->
     <link rel="Stylesheet" href="css/base.css" />
-    <link rel="Stylesheet" href="css/aboutus.css" />
+    <link rel="Stylesheet" href="css/upload.css" />
   </head>
 
   <body>
@@ -56,14 +56,14 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto px-3">
               <a class="nav-link py-3" href="./index.html">Buscar</a>
-              <a class="nav-link py-3 active">¿Acerca de?</a>
+              <a class="nav-link py-3" href="./aboutus.html">¿Acerca de?</a>
               <div class="dropdown dropstart py-2">
                 <button class="btn dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Docente
                 </button>
                 <ul class="dropdown-menu px-3" >
                   <li><a class="nav-link" href="#">Crear profesor</a></li>
-                  <li><a class="nav-link" href="upload.html">Subir Archivo</a></li>
+                  <li><a class="nav-link active">Subir Archivo</a></li>
                   <li><a class="nav-link" href="./login.html">Cerrar Sesión</a></li>
                 </ul>
               </div>
@@ -76,17 +76,49 @@
     </header>
 
     <div class="container bg-white py-4 px-4 my-3">
-      <figure class="text-center">
-        <blockquote class="blockquote">
-          <p>
-            "Si he logrado ver más lejos, ha sido porque he subido a hombros de
-            gigantes."
-          </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Carta de Isaac Newton a Robert Hooke
-        </figcaption>
-      </figure>
+      <h2>Subir archivo:</h2>
+      <form>
+        <div class="mb-4">
+          <label for="correo" class="form-label">Titulo del trabajo: </label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Titulo"
+              aria-label="usuario"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="materia" class="form-label">Materia: </label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione una opción:</option>
+            <option value="1">Calculo I.</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="mt-2">
+            <input type="checkbox" class="form-check-input" id="materiaCheck" />
+            <label class="form-check-label" for="materiaCheck"
+              >Visualizar todas las materias.</label
+            >
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="descripcion" class="form-label">Descripción: </label>
+          <div class="input-group">
+            <textarea
+              class="form-control descrp"
+              aria-label="With textarea"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button">Subir archivo</button>
+        </div>
+      </form>
     </div>
 
     <footer></footer>
