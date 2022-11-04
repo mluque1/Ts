@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--Custom CSS-->
     <link rel="Stylesheet" href="css/base.css" />
-    <link rel="Stylesheet" href="css/upload.css" />
+    <link rel="Stylesheet" href="css/newdocente.css" />
   </head>
 
   <body>
@@ -67,12 +67,10 @@
                   Docente
                 </button>
                 <ul class="dropdown-menu px-3">
+                  <li><a class="nav-link active">Crear Docente</a></li>
                   <li>
-                    <a class="nav-link" href="./crear_docente.html"
-                      >Crear Docente</a
-                    >
+                    <a class="nav-link" href="./upload.html">Subir Archivo</a>
                   </li>
-                  <li><a class="nav-link active">Subir Archivo</a></li>
                   <li>
                     <a class="nav-link" href="./login.html">Cerrar Sesión</a>
                   </li>
@@ -87,61 +85,75 @@
     </header>
 
     <div class="container bg-white py-4 px-4 my-3">
-      <h2>Subir archivo</h2>
-      <form>
+      <h2>Registrar Docente</h2>
+      <form class="my-3 pt-3">
+        <div class="mb-2">
+          <label for="correo" class="form-label"><b>Nombres</b></label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="names"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+        </div>
         <div class="mb-4">
+          <label for="correo" class="form-label"><b>Apellidos</b></label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="lastnames"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+        </div>
+        <div class="mb-2">
           <label for="correo" class="form-label"
-            ><b>Titulo del trabajo</b></label
+            ><b>Correo institucional</b></label
           >
           <div class="input-group">
             <input
               type="text"
               class="form-control"
-              placeholder="Titulo"
+              placeholder="nombre.apellido"
               aria-label="usuario"
               aria-describedby="basic-addon2"
             />
+            <span class="input-group-text" id="basic-addon2">@upb.edu.co</span>
           </div>
+        </div>
+        <div class="mb-4 form-check">
+          <input type="checkbox" class="form-check-input" id="adminCheck" />
+          <label class="form-check-label" for="adminCheck"
+            >Registrar como administrador</label
+          >
+        </div>
+        <div class="mb-2">
+          <label for="password" class="form-label"><b>Contraseña</b></label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="**********"
+          />
         </div>
         <div class="mb-4">
-          <label for="correo" class="form-label"><b>Autor</b></label>
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Autor"
-              aria-label="usuario"
-              aria-describedby="basic-addon2"
-            />
-          </div>
+          <label for="password" class="form-label"
+            ><b>Repetir contraseña</b></label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="password2"
+            placeholder="**********"
+          />
         </div>
-        <div class="mb-4">
-          <label for="materia" class="form-label"><b>Materia</b></label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Seleccione una opción:</option>
-            <option value="1">Calculo I.</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <div class="mt-2">
-            <input type="checkbox" class="form-check-input" id="materiaCheck" />
-            <label class="form-check-label" for="materiaCheck"
-              >Visualizar todas las materias.</label
-            >
-          </div>
-        </div>
-        <div class="mb-4">
-          <label for="descripcion" class="form-label"><b>Descripción</b></label>
-          <div class="input-group">
-            <textarea
-              class="form-control descrp"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-        </div>
-
         <div class="d-grid gap-2">
-          <button class="btn btn-primary" type="button">Subir archivo</button>
+          <button class="btn btn-primary" type="button">
+            Registrar nuevo docente
+          </button>
         </div>
       </form>
     </div>
@@ -151,5 +163,5 @@
   <!--Boostrap JS-->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!--Custom JS-->
-  <script src="js/aboutus.js"></script>
+  <script src="js/index.js"></script>
 </html>
