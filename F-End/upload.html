@@ -87,8 +87,8 @@
     </header>
 
     <div class="container bg-white py-4 px-4 my-3">
-      <h2>Subir archivo</h2>
-      <form>
+      <form class="needs-validation" novalidate>
+        <h2>Subir archivo</h2>
         <div class="mb-4">
           <label for="correo" class="form-label"
             ><b>Titulo del trabajo</b></label
@@ -100,36 +100,66 @@
               placeholder="Titulo"
               aria-label="usuario"
               aria-describedby="basic-addon2"
+              required
             />
+            <div class="invalid-feedback">
+              Por favor, ingrese el título.
+            </div>
           </div>
+          <div class="invalid-feedback">Please select a valid state.</div>
         </div>
         <div class="mb-4">
-          <label for="correo" class="form-label"><b>Autor</b></label>
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Autor"
-              aria-label="usuario"
-              aria-describedby="basic-addon2"
-            />
+          <label for="autores" class="form-label"><b>Autor</b></label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Autor"
+            aria-label="usuario"
+            aria-describedby="basic-addon2"
+            id="autores"
+            required
+          />
+          <div class="invalid-feedback">
+            Por favor, ingrese el nombre del autor.
           </div>
         </div>
+
         <div class="mb-4">
           <label for="materia" class="form-label"><b>Materia</b></label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Seleccione una opción:</option>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            required
+          >
+            <option selected disable value="">Seleccione una opción:</option>
             <option value="1">Calculo I.</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
+          <div class="invalid-feedback">
+            Por favor, seleccione la matería.
+          </div>
           <div class="mt-2">
-            <input type="checkbox" class="form-check-input" id="materiaCheck" />
+            <input type="checkbox" class="form-check-input" id="materiaCheck"/>
             <label class="form-check-label" for="materiaCheck"
               >Visualizar todas las materias.</label
             >
           </div>
         </div>
+
+        <div class="mb-4">
+          <label for="documento" class="form-label"
+            ><b> Inserte el documento </b></label
+          >
+          <input class="form-control" type="file" id="documento" required/>
+          <div class="invalid-feedback">
+            Por favor, inserte el documento.
+          </div>
+          <div id="documentoHelp" class="form-text">
+            Solo son aceptables documentos tipo: .pdf .doc .docx .xlsx .rar
+          </div>
+        </div>
+
         <div class="mb-4">
           <label for="descripcion" class="form-label"><b>Descripción</b></label>
           <div class="input-group">
@@ -141,7 +171,7 @@
         </div>
 
         <div class="d-grid gap-2">
-          <button class="btn btn-primary" type="button">Subir archivo</button>
+          <button class="btn btn-primary" type="submit">Subir archivo</button>
         </div>
       </form>
     </div>
@@ -151,5 +181,5 @@
   <!--Boostrap JS-->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!--Custom JS-->
-  <script src="js/aboutus.js"></script>
+  <script src="js/upload.js"></script>
 </html>
